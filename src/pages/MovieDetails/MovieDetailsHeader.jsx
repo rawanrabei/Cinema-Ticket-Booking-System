@@ -11,12 +11,10 @@ const MovieDetailsHeader = ({movieData}) => {
     };
 
     return (
-    <div className="relative"> 
-            <section style={backgroundStyle} className="headerTop relative w-full pt-10 pb-48 bg-black"> 
+    <div className="relative h-screen w-full"> 
+            <section style={backgroundStyle} className="headerTop relative w-full bg-black h-1/2 flex flex-col justify-end"> 
                 <div className="absolute inset-0 bg-black opacity-60"></div>
-                <div className="relative z-40  flex">
-                    <div className="w-80"></div>
-                    <div className="flex flex-col">
+                <div className="relative z-40  flex flex-col align-bottom pb-5 ms-96">
                         <Typography variant="h1" color="white" className="text-6xl font-extrabold mb-3">
                             {movieData.title}
                         </Typography>
@@ -37,23 +35,20 @@ const MovieDetailsHeader = ({movieData}) => {
                                 <Chip key={genre} value={genre} color="blue-gray" className="font-semibold" size="sm"/>
                             ))}
                         </div>
-                    </div>
                 </div>
             </section>
-            <section className="relative w-full z-50 ms-20">
+            <section className="relative z-50 ms-20">
                 <img 
                     src={movieData.posterImg || '/placeholder-poster.jpg'} 
                     alt={movieData.title}
-                    className="w-full md:w-64 h-96 object-cover rounded-lg shadow-xl border-4 absolute top-1/2 left-0 transform -translate-y-1/2"
+                    className=" md:w-64 h-96 object-cover rounded-lg shadow-xl border-4 absolute -translate-y-1/2"
                 />
-
             </section>
-            <section className="w-full bg-white p-8 shadow-2xl text-gray-800 relative z-30"> 
-            <div className="mx-auto max-w-7xl"> 
-                <div className="flex flex-col md:flex-row gap-8">
-                <div className="w-40 h-96"></div>
-                <div className="pt-24 md:pt-0">
-                    <Typography variant="paragraph" className="mb-6 max-w-3xl text-lg text-gray-700">
+            <section className="bg-white py-11 text-gray-800 relative z-30 h-60 ms-96"> 
+            <div className=""> 
+                <div className="flex flex-col">
+                <div className="">
+                    <Typography variant="paragraph" className="mb-6 text-lg text-gray-700">
                     {movieData.description}
                     </Typography>
                     <div className="flex gap-10 text-base font-medium">
