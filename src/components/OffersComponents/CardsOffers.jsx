@@ -77,8 +77,8 @@ const CardsOffers = () => {
                     <div className="bg-[#FF0800] p-1 rounded-lg"><h1 className="text-white">20% OFF</h1></div>
                     <div className="bg-[#460b09] rounded-full"><SlPeople className="inline-block text-[#FF0800] m-2"/></div>
                     </div>
-                    <div className="mt-6 flex flex-col gap-3">
-                    <h1 className="text-white text-xl">Friends Special</h1>
+                    <div className="mt-6 flex flex-col gap-3 ">
+                    <h1 className="text-white text-xl ">Friends Special</h1>
                     <p className="text-gray-400">Buy 4 tickets, get 20% off on food & drinks</p>
                     </div>
                     <div className="flex justify-between p-2 items-center mt-10 bg-gray-900 rounded-xl">
