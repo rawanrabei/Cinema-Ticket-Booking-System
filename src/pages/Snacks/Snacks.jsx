@@ -45,7 +45,7 @@ const Snacks = () => {
         name: "Classic Popcorn",
         description: "Freshly popped butter popcorn",
         price: 8,
-        image: "../../../public/movie-theatre-popcorn.jpg",
+        image: "/movie-theatre-popcorn.jpg",
         item: 0,
         },
         {
