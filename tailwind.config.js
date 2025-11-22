@@ -11,7 +11,7 @@ module.exports = withMT({
   ],
   theme: {
     extend: {
-       screens: {
+      screens: {
           phone: { min: "425px", max: "767px" },
           tablet: { min: "768px", max: "1023px" },
           laptop: "1024px",
