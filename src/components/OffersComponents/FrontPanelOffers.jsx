@@ -8,7 +8,7 @@ import React from 'react'
 const FrontPanelOffers = () => {
     return (
         <div>
-            <div className=" bg-gradient-to-t from-black to-gray-500 py-10 phone:w-fit tablet:w-auto laptop:w-fit">
+            <div className=" bg-gradient-to-t from-black to-gray-500 py-10 phone:w-auto tablet:w-auto laptop:w-fit">
             <div className="m-5 flex flex-col gap-5">
                     <h1 className="text-5xl ">
                     <IoGiftOutline 
